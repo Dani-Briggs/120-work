@@ -17,4 +17,4 @@
 - Sadly, I didn't get a chance to answer any questions this week, but hopefully I'll get the chance to help someone.
 
 # Markdown Image
-![Image](C:Users\Documents\CreativeC)
+![MarkdownShot.png](https://github.com/Dani-Briggs/120-work/blob/master/hw-2/MarkdownShot.png)
