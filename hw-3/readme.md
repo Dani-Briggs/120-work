@@ -9,4 +9,4 @@ I thought this assignment was kinda fun. It reminded me of when I was learning p
 
 ## My Final Sketch
 
-![This is my final sketch](imgs/hw-3_pic.PNG)
+![This is my final sketch](https://github.com/Dani-Briggs/120-work/blob/master/hw-3/Images/hw-3_pic.PNG)
