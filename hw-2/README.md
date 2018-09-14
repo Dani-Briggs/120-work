@@ -17,4 +17,6 @@
 - Sadly, I didn't get a chance to answer any questions this week, but hopefully I'll get the chance to help someone.
 
 # Markdown Image
-![MarkdownShot.png](https://github.com/Dani-Briggs/120-work/blob/master/hw-2/MarkdownShot.png)
+![MarkdownShot.png][image]
+
+[image]: (https://github.com/Dani-Briggs/120-work/blob/master/hw-2/MarkdownShot.png)
