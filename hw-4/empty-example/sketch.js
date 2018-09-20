@@ -17,7 +17,9 @@ function draw() {
 
     // ** BODY **********************************
     push();
-
+      strokeWeight(4);
+      fill('red');
+      rect( -155, -145, 300, 400, 90 );
 
     pop();
     // **END BODY**
@@ -33,24 +35,51 @@ function draw() {
 
     // ** HEAD **********************************
     push();
+      strokeWeight(4);
+      fill('red')
+      rect( -158, -420, 300, 300, 150, 0, 90, 0 );
 
-
-    // **MOUTH**
+    // **MOUTH**-
     push();
 
+    //rotate( radians(90) );
+
+    line( -50, -200, 100, -200 );
     pop();
     // **END MOUTH**
 
     // **EYES**
     push();
+    //*left EYE*
+    //white part
+    fill(255);
+    ellipse( -90, -300, 66, 66 );
+    //left pupul
+    fill(0);
+    ellipse( -90, -300, 36, 36 );
 
+    //*right eye*
+    //white part
+    fill(255);
+    ellipse( 90, -300, 66, 66 );
+    //right pupul
+    fill(0);
+    ellipse( 90, -300, 36, 36 );
 
     pop();
     // **END EYES**
 
+
+
     pop();
     // **END HEAD**
 
+    // ** LEGS **********************************
+    push();
+
+
+    pop();
+    // **END LEGS**
 
     // ** END CHARACTER SANDBOX *******************
     pop();
