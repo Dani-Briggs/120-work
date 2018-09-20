@@ -41,10 +41,12 @@ function draw() {
 
     // **MOUTH**-
     push();
-
-    //rotate( radians(90) );
-
+    //line for mouth
     line( -50, -200, 100, -200 );
+    //teeth
+    
+
+
     pop();
     // **END MOUTH**
 
