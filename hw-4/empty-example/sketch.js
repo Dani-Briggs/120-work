@@ -44,7 +44,13 @@ function draw() {
     //line for mouth
     line( -50, -200, 100, -200 );
     //teeth
-    
+    //right tooth
+    fill(255);
+    triangle( 60, -200, 80, -200, 80, -180 );
+    //left tooth
+    fill(255);
+    triangle( -20, -200, -40, -200, -40, -180 );
+
 
 
     pop();
