@@ -27,7 +27,16 @@ function draw() {
 
     // ** ARMS **********************************
     push();
+    //right ARM
+    strokeWeight(4);
+    fill('red');
+    rect( 145, -20, 50, 100, 90 );
 
+    //left ARM
+    rotate( radians(135) );
+    strokeWeight(4);
+    fill('red');
+    rect( 90, 115, 50, 100, 90 );
 
     pop();
     // **END ARMS**
@@ -50,8 +59,6 @@ function draw() {
     //left tooth
     fill(255);
     triangle( -20, -200, -40, -200, -40, -180 );
-
-
 
     pop();
     // **END MOUTH**
@@ -77,14 +84,20 @@ function draw() {
     pop();
     // **END EYES**
 
-
-
     pop();
     // **END HEAD**
 
     // ** LEGS **********************************
     push();
+    //left leg
+    strokeWeight(4);
+    fill('red');
+    rect( -115, 250, 50, 100, 90 );
 
+    //right leg
+    strokeWeight(4);
+    fill('red');
+    rect( 55, 250, 50, 100, 90 );
 
     pop();
     // **END LEGS**
