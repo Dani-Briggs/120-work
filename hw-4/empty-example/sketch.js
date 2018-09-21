@@ -21,6 +21,11 @@ function draw() {
       fill('red');
       rect( -155, -145, 300, 400, 90 );
 
+      //belly
+      strokeWeight(4);
+      fill('yellow');
+      rect( -105, -105, 200, 300, 90 );
+
     pop();
     // **END BODY**
 
@@ -32,11 +37,22 @@ function draw() {
     fill('red');
     rect( 145, -20, 50, 100, 90 );
 
+    //right hand
+    fill('pink');
+    ellipse( 170, 90, 66, 66 );
+
+
+    //left hand
+    fill('pink');
+    ellipse( -240, -90, 66, 66 );
+
     //left ARM
     rotate( radians(135) );
     strokeWeight(4);
     fill('red');
     rect( 90, 115, 50, 100, 90 );
+
+
 
     pop();
     // **END ARMS**
@@ -94,10 +110,18 @@ function draw() {
     fill('red');
     rect( -115, 250, 50, 100, 90 );
 
+    //left foot
+    fill('pink');
+    ellipse( -100, 370, 66, 66 );
+
     //right leg
     strokeWeight(4);
     fill('red');
     rect( 55, 250, 50, 100, 90 );
+
+    //right foot
+    fill('pink');
+    ellipse( 80, 370, 66, 66 );
 
     pop();
     // **END LEGS**
