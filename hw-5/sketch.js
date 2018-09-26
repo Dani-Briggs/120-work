@@ -3,7 +3,7 @@ Dani Briggs, 50
 //creating a new character
 //seting it up
 function setup() {
-  createCanvas( windowWidth, 500 );
+  createCanvas( windowWidth, 900 );
 
 }
 
@@ -16,9 +16,11 @@ let bodyHeight = 90;
 
 //creating the draw function
 function draw() {
+
+  //no cursor on screen
+  noCursor();
+
     background( 'pink' );
-    //no cursor on screen
-    noCursor();
 
     //The Updating Values
     //the body rotation rate
@@ -26,15 +28,13 @@ function draw() {
     // body angle to equal itself plus rotation rate
     bodyAngle = bodyAngle + bodyRotateRate;
 
-
+    // character follows mouse
+    translate( mouseX, mouseY );
 
     //***
     // character sandbox
     //***
     push();
-
-    // character follows mouse
-    translate( mouseX, mouseY );
 
     //***
     //BODY
@@ -43,6 +43,7 @@ function draw() {
 
     strokeWeight(8);
     fill( 'rgb(255, 116, 28)');
+    translate(0,-60);
     rotate( radians( bodyAngle ));
     ellipse( 0, 0, bodyWidth, bodyHeight );
 
@@ -57,6 +58,9 @@ function draw() {
     translate( bodyWidth * -0.2, bodyHeight * -0.2 );
     ellipse( 0, 0, bodyWidth * 0.33, bodyHeight * 0.33 );
 
+    pop();
+
+    push();
     //iris
     strokeWeight(2);
     fill( 'rgb(45, 255, 123)');
@@ -66,15 +70,10 @@ function draw() {
     ellipse( 0, 0, 5 );
 
     pop();
-    pop(); // end of body 
-
-
-
+    pop(); // end of body
 
 
 
     pop(); //End of character
-
-
 
 }
