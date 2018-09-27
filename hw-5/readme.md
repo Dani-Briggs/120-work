@@ -1,6 +1,6 @@
 Dani Briggs, 50
 
-[My animation](file:///C:/Users/dani2/Documents/CreativeCoding/120-work/hw-5/index.html)
+[My animation](https://dani-briggs.github.io/120-work/hw-5/)
 
 # HW-5
 
