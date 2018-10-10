@@ -1,9 +1,9 @@
 
 
 let ball = {};
-ball.width = 40;
-ball.x = 10;
-ball.y = 10;
+ball.width = 100;
+ball.x = 5;
+ball.y = 5;
 ball.delta_x = 1;
 ball.delta_y = 1;
 ball.scale_x = 1;
@@ -29,11 +29,18 @@ function draw() {
         ball.delta_y = -1 * ball.delta_y;
     }
 
-    fill(255);
+    var ballRed = floor( random(256));
+    var ballBlue = floor( random (256));
+    var ballGreen = floor( random(256));
+
+
+    stroke(ballRed, ballBlue, ballGreen);
+    strokeWeight(24);
+    fill(ballRed, ballBlue, ballGreen);
     ellipse(ball.x, ball.y, ball.width, ball.width);
 }
 
 function mousePressed() {
-    ball.scale_x = map(mouseX, 0, width, 0.5, 10);
-    ball.scale_y = map(mouseY, 0, height, 0.5, 10);
+    ball.scale_x = map(mouseX, 0, width, 0.5, 20);
+    ball.scale_y = map(mouseY, 0, height, 0.5, 20);
 }
