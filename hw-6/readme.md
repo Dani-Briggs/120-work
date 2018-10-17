@@ -2,7 +2,7 @@ Dani Briggs, 50
 
 [My animation](https://dani-briggs.github.io/120-work/hw-6/)
 
-# HW-5
+# HW-6
 
 ## Summary
 
