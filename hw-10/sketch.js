@@ -1,16 +1,52 @@
-
+//Redo of HW-5
 //creating a new character
+
+//creating the array
+let bodyArray = [0, 120];
+
+
+//creating the functions
+//green eye function
+function eye( transNum, col_x, col_y, col_z ) {
+  push();
+
+  //white of eyes
+  strokeWeight(4);
+  fill(255);
+  //move to center of body
+  translate( bodyArray[1] * transNum, bodyArray[1] * transNum );
+  ellipse( 0, 0, bodyArray[1] * 0.33, bodyArray[1] * 0.33 );
+
+  //iris
+  strokeWeight(2);
+  fill( col_x, col_y, col_z );
+  ellipse( 0, 0, 20 );
+  //pupul
+  fill(0);
+  ellipse( 0, 0, 8 );
+
+  pop();
+
+
+}
+//creating a body function
+function body(col_x, col_y, col_z) {
+
+  strokeWeight(8);
+  fill( col_x, col_y, col_z);
+  rotate( radians( bodyArray[0] ));
+  ellipse( 0, 0, bodyArray[1], bodyArray[1] );
+
+
+
+}
+
 //seting it up
 function setup() {
 createCanvas( windowWidth, 500 );
 
 }
 
-//seting the varables
-let bodyAngle = 0;
-let bodyRotateRate = 0;
-let bodyWidth = 120;
-let bodyHeight = 120;
 
 //creating the draw function
 function draw() {
@@ -20,9 +56,9 @@ noCursor();
 
 //The Updating Values
 //the body rotation rate
-bodyRotateRate = ( mouseY * 0.5 ) - 20;
+bodyArray[0] = ( mouseY * 0.2 ) - 5;
 // body angle to equal itself plus rotation rate
-bodyAngle = bodyAngle + bodyRotateRate;
+bodyArray[0] = bodyArray[0] + bodyArray[0];
 
 
 
@@ -39,27 +75,22 @@ translate( mouseX, mouseY );
 //***
 push();
 
-strokeWeight(8);
-fill( 'rgb(255, 116, 28)');
-rotate( radians( bodyAngle ));
-ellipse( 0, 0, bodyWidth, bodyHeight );
+body(255,116,28);
+
 
 //***
 //RIGHT EYE
 //***
 push();
 
-strokeWeight(4);
-fill(255);
-//move to center of body
-translate( bodyWidth * -0.2, bodyHeight * -0.2 );
-ellipse( 0, 0, bodyWidth * 0.33, bodyHeight * 0.33 );
+eye(-0.2, 45, 255, 164);
 
-//iris
-strokeWeight(2);
-fill( 'rgb(45, 255, 123)');
-ellipse( 0, 0, 20 );
-//pupul
+pop();
+
+push();
+//***
+//NOSE
+//***
 fill(0);
 ellipse( 0, 0, 8 );
 
@@ -70,19 +101,7 @@ pop();
 //***
 push();
 
-strokeWeight(4);
-fill(255);
-//move to center of body
-translate( bodyWidth * 0.2, bodyHeight * 0.2 );
-ellipse( 0, 0, bodyWidth * 0.33, bodyHeight * 0.33 );
-
-//iris
-strokeWeight(2);
-fill( 'rgb(45, 255, 123)');
-ellipse( 0, 0, 20 );
-//pupul
-fill(0);
-ellipse( 0, 0, 8 );
+eye(0.2, 45, 255, 164);
 
 pop();
 
