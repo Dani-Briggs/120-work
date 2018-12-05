@@ -7,7 +7,7 @@ var song_a;
 function setup(){
   createCanvas(windowWidth, windowHeight);
   song_a = loadSound("8-bit_sing_for_ab.mp3", loaded);
-  song_a.setVolume(0.5);
+  //song_a.setVolume(0.5);
   let x = width/2;
   let y = height;
 
@@ -28,6 +28,7 @@ function draw(){
  push();
   //**body**
   fill(0, 0, 55);
+  noStroke();
   rect(550, 370, 50, 50);
   rect(500, 320, 50, 50);
   rect(450, 320, 50, 50);
@@ -75,6 +76,7 @@ pop();
 push();
  //**body**
  fill(0, 0, 55);
+ noStroke();
  translate(750, 10);
  scale(0.5, 0.5);
  rect(550, 370, 50, 50);
@@ -120,10 +122,98 @@ push();
 pop();
 
 //**standing person**
-//*body*
+//*head*
 push();
+
+fill(0);
+rect(1200, 330, 20, 20);
+rect(1200, 310, 20, 20);
+rect(1220, 310, 20, 20);
+rect(1240, 310, 20, 20);
+rect(1260, 310, 20, 20);
+
+fill(255,224,189);
+noStroke();
+rect(1220, 330, 60, 60);
 
 
 pop();
 
+//body
+push();
+
+fill(35);
+noStroke();
+rect(1220, 390, 30, 30);
+rect(1250, 390, 30, 30);
+rect(1220, 420, 30, 30);
+rect(1250, 420, 30, 30);
+rect(1220, 450, 30, 30);
+rect(1250, 450, 30, 30);
+rect(1220, 480, 30, 30);
+rect(1250, 480, 30, 30);
+rect(1220, 510, 30, 30);
+rect(1250, 510, 30, 30);
+
+//right leg
+push();
+rect(1280, 540, 30, 30);
+rect(1280, 570, 30, 70);
+pop();
+
+//left leg
+push();
+rect(1190, 540, 30, 30);
+rect(1190, 570, 30, 70);
+pop();
+
+//right Arm
+push();
+rect(1280, 390, 30, 30);
+rect(1310, 420, 30, 30);
+rect(1340, 450, 30, 30);
+rect(1340, 480, 30, 30);
+
+//hand
+push();
+fill(255,224,189);
+noStroke();
+rect(1340, 510, 30, 30);
+pop();
+
+pop();
+
+//left arm
+push();
+rect(1190, 390, 30, 30);
+rect(1160, 420, 30, 30);
+rect(1130, 450, 30, 30);
+rect(1130, 480, 30, 30);
+
+//hand
+push();
+fill(255,224,189);
+noStroke();
+rect(1130, 510, 30, 30);
+pop();
+
+//mask
+push();
+fill(0);
+noStroke();
+rect(1130, 540, 15, 40);
+rect(1145, 540, 15, 20);
+pop();
+
+
+pop();
+
+//Shadow
+push();
+fill(0);
+noStroke();
+rect(1090, 640, 220, 20);
+pop();
+
+pop();
 }
