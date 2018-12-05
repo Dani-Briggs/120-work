@@ -2,14 +2,15 @@ var song_a;
 //var song_b;
 //var song_c;
 
-let x = width/2;
-let y = height;
 
 
 function setup(){
   createCanvas(windowWidth, windowHeight);
   song_a = loadSound("8-bit_sing_for_ab.mp3", loaded);
   song_a.setVolume(0.5);
+  let x = width/2;
+  let y = height;
+
 
 }
 
