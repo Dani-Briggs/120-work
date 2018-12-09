@@ -1,5 +1,24 @@
-# Empty p5 sketch.
+Dani Briggs, 50
 
-Please replace contents of this file with appropriate readme information after finishing your p5 sketch.
+[My sketch](https://dani-briggs.github.io/120-work/final/)
 
-Current p5 version -> 0.7.1
+# HW-12
+
+## Summary
+
+
+## Steps
+
+
+
+## Disscusion
+
+
+
+## Problems
+
+
+
+## Helping Others
+
+  Didn't get a chance to help.
