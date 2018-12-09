@@ -1,27 +1,36 @@
-var song_a;
-//var song_b;
-//var song_c;
-
+var song;
+var fft;
+var w;
 
 
 function setup(){
+  frameRate(34);
   createCanvas(windowWidth, windowHeight);
-  song_a = loadSound("8-bit_sing_for_ab.mp3", loaded);
-  //song_a.setVolume(0.5);
+  song = loadSound("8-bit_sing_for_ab.mp3", loaded);
   let x = width/2;
   let y = height;
+  fft = new p5.FFT(0, 512);
+  w = width/64;
 
 
 }
 
 function loaded(){
-  song_a.play();
+  song.play();
 }
 
 
 function draw(){
   background(200);
+  var spectrum = fft.analyze();
+  noStroke();
+  fill(230);
+  for (var i = 0; i < spectrum.length; i++){
+    var amp = spectrum[i];
+    var y = map(amp, 0, 255, height, 0);
+    rect(i*w, y, w - 2, height - y);
 
+  }
 
 ///*Album one - Absolution*
 //***Shadow person one***
