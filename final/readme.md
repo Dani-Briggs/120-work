@@ -18,8 +18,8 @@ I wouldn't mind a Disscusion on sound visuals because I had a lot of fun with it
 
 ## Problems
 
-I problems on movement and my song not playing. The song not playing was because I wasn't using a local server.  I didn't get much help on the movement so, I had to get rid of it. 
+I problems on movement and my song not playing. The song not playing was because I wasn't using a local server.  I didn't get much help on the movement so, I had to get rid of it.
 
 ## Helping Others
 
-  Didn't get a chance to help.
+Didn't get a chance to help.
